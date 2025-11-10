@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.taskmanager.ui.theme.TaskManagerTheme
 
@@ -44,10 +45,10 @@ fun TaskManager() {
             contentDescription = null
         )
         Text(
-            text = "All tasks completed",
+            text = stringResource(R.string.all_tasks_completed_text),
         )
         Text(
-            text = "Nice work!"
+            text = stringResource(R.string.all_task_completed_message_text)
         )
     }
 }
